@@ -6,14 +6,6 @@ if (!theme) {
   setTheme(theme);
 }
 
-let themeDots = document.getElementsByClassName('theme-dot');
-for (var i = 0; themeDots.length > i; i++) {
-  themeDots[i].addEventListener('click', function () {
-    let mode = this.dataset.mode;
-    setTheme(mode);
-  });
-}
-
 function setTheme(mode) {
   if (mode === 'theme-light') {
     document.getElementById('theme-style').href = 'styles/default.css';

@@ -54,7 +54,7 @@ textarea {
 }
 a {
   text-decoration: none;
-  color: #17a2b8;
+  color: #008197;
 }
 
 ul {
@@ -82,7 +82,7 @@ h6 {
 }
 
 svg:hover {
-  fill: #17a2b8;
+  fill: #008197;
 }
 
 .s1 {
@@ -272,19 +272,6 @@ input:checked + .slider:before {
   border-radius: 5px;
 }
 
-.theme-dot {
-  height: 30px;
-  width: 30px;
-  background-color: grey;
-  border: 2px solid var(--themeDotBorder);
-  border-radius: 50%;
-  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0, 75);
-  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  cursor: pointer;
-  margin: 5px;
-}
-
 #light-mode {
   background-color: #fff;
 }
@@ -310,14 +297,14 @@ input:checked + .slider:before {
 #preview-shadow {
   background-color: var(--previewShadow);
   max-width: 400px;
-  height: 140px;
+  height: 130px;
   padding-left: 30px;
   padding-top: 30px;
 }
 
 #preview {
   max-width: 400px;
-  border: 1.5px solid #17a2b8;
+  border: 1.5px solid #008197;
   background-color: var(--previewBg);
   padding: 15px;
   position: relative;
@@ -328,7 +315,7 @@ input:checked + .slider:before {
   height: 7px;
   width: 7px;
   border-radius: 50%;
-  border: 1.5px solid #17a2b8;
+  border: 1.5px solid #008197;
   background-color: #fff;
   position: absolute;
 }
@@ -450,6 +437,10 @@ input:checked + .slider:before {
   color: #fff;
   background-color: var(--buttonColor);
   border: none;
+  border-radius: 5px;
+  font-family: 'Russo One', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
