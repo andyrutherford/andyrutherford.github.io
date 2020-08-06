@@ -1,11 +1,3 @@
-let theme = localStorage.getItem('theme');
-
-if (!theme) {
-  setTheme('light-light');
-} else {
-  setTheme(theme);
-}
-
 function setTheme(mode) {
   if (mode === 'theme-light') {
     document.getElementById('theme-style').href = 'styles/default.css';
@@ -17,10 +9,19 @@ function setTheme(mode) {
 }
 
 function toggleTheme() {
-  console.log('toggle theme');
   if (localStorage.getItem('theme') === 'theme-dark') {
     setTheme('theme-light');
   } else {
     setTheme('theme-dark');
   }
 }
+
+(function () {
+  if (localStorage.getItem('theme') === 'theme-dark') {
+    setTheme('theme-dark');
+    document.getElementById('slider').checked = false;
+  } else {
+    setTheme('theme-light');
+    document.getElementById('slider').checked = true;
+  }
+})();

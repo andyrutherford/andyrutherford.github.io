@@ -81,10 +81,6 @@ h6 {
   font-size: 16px;
 }
 
-svg:hover {
-  fill: #008197;
-}
-
 .s1 {
   background-color: var(--mainColor);
   border-bottom: 1px solid var(--borderColor);
@@ -223,7 +219,7 @@ svg:hover {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   box-shadow: 0 0px 15px #2020203d;
-  background: white url('../images/sun.svg');
+  background: white url('../images/moon.svg');
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -241,7 +237,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(19px);
   -ms-transform: translateX(19px);
   transform: translateX(19px);
-  background: white url('../images/moon.svg');
+  background: white url('../images/sun.svg');
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -274,14 +270,6 @@ input:checked + .slider:before {
 
 #light-mode {
   background-color: #fff;
-}
-
-#blue-mode {
-  background-color: #192734;
-}
-
-#purple-mode {
-  background-color: #7e4c74;
 }
 
 .right-column {
@@ -360,7 +348,16 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-evenly;
   padding: 0 50px;
+}
+
+#linkedin-icon,
+#github-icon {
   fill: var(--icons);
+}
+
+#linkedin-icon:hover,
+#github-icon:hover {
+  fill: #008197;
 }
 
 .post-wrapper {
