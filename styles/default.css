@@ -336,6 +336,9 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-evenly;
   background-color: var(--previewShadow);
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
 }
 
 .social-links {
@@ -448,11 +451,19 @@ input:checked + .slider:before {
   .social-links {
     margin: auto;
   }
+
+  #skills {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 800px) {
   h1 {
     text-align: center;
+  }
+
+  h4 {
+    font-size: 18px;
   }
 
   .intro-wrapper {
@@ -465,6 +476,7 @@ input:checked + .slider:before {
   }
 
   .about-wrapper {
+    display: block;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -480,25 +492,15 @@ input:checked + .slider:before {
   }
 
   #preview-shadow {
-    padding-left: 15px;
-    padding-top: 15px;
+    display: contents;
   }
 
   #preview {
-    margin-right: -15px;
-  }
-
-  #skills {
-    width: 70%;
     margin: auto;
   }
 
   .about-wrapper {
     gap: 50px;
-  }
-
-  .social-links {
-    padding-right: 5%;
   }
 
   .post-wrapper {
