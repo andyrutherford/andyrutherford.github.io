@@ -22,6 +22,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous"
+  />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -53,10 +59,10 @@
             </label></li>
             </ul>
           </div>
-          <div class="left-column">
-            <img id="profile-pic" src="images/profile-picture.jpg" alt="profile picture"/>
+          <div class="left-column" data-aos="fade-right">
+            <img id="profile-pic" src="images/profile-picture.jpg" alt="profile picture" >
           </div>
-          <div class="right-column">
+          <div class="right-column" data-aos="fade-left">
             
               <h1>Hi, I'm Andy</h1>
             
@@ -64,7 +70,7 @@
               <div id="preview">
                 <div id="corner-tl" class="corner"></div>
                 <div id="corner-tr" class="corner"></div>
-                <p>I'm a software developer interested in using modern technology to solve real world problems.</p>
+                <p>I'm a software developer passionate in using cutting edge technology to solve real world problems.</p>
                 <div id="corner-bl" class="corner"></div>
                 <div id="corner-br" class="corner"></div>
               </div>
@@ -78,12 +84,12 @@
         <div class="about-wrapper">
 
           <div class="social-links">
-            <div id="preview-shadow" style="height: 210px">
+            <div id="preview-shadow" style="height: 180px">
               <div id="preview">
                 <div id="corner-tl" class="corner"></div>
                 <div id="corner-tr" class="corner"></div>
 
-                <h4>Find me on LinkedIn and Github</h4>
+                <h4>Find me online</h4>
                 <div class="social-icons">
                   <a
                     href="https://www.linkedin.com/in/andrewrutherford06/"
@@ -128,7 +134,7 @@
       <div class="main-container">
         <h3 style="text-align: center;">Some of my past projects</h3>
         <div class="post-wrapper">
-          <div>
+          <div data-aos="flip-up">
             <div class="post">
               <img
                 class="thumbnail"
@@ -164,12 +170,43 @@
               </div>
             </div>
           </div>
-          <div>
+          <div data-aos="flip-up">
             <div class="post">
               <img
                 class="thumbnail"
-                style="object-position: left;"
-                src="images/projects/covid2.jpg"
+                style="object-position: top;"
+                src="images/projects/popdog.jpg"
+                alt="popdog"
+              />
+              <div class="post-preview">
+                <h4 class="post-title">
+                  <a
+                    href="https://github.com/andyrutherford/popdog-react"
+                    target="_blank" rel="noopener"
+                    >Popdog Clone</a
+                  >
+                </h4>
+                <p class="post-intro">
+                  A responsive clone of the popular Esports streaming platform 
+                  <a href="https://popdog.com/" target="_blank" rel="noopener"
+                    >Popdog</a
+                  >. Includes CSS transitions, animations, and keyframes.
+                </p>
+                <a href="https://popdog-react.netlify.app/" target="_blank rel="noopener">Live</a> | 
+                <a
+                  href="https://github.com/andyrutherford/popdog-react"
+                  target="_blank" rel="noopener"
+                  >Repo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div data-aos="flip-up">
+            <div class="post">
+              <img
+                class="thumbnail"
+                style="object-position: top;"
+                src="images/projects/covidtracker.jpg"
                 alt="covid tracker"
               />
               <div class="post-preview">
@@ -203,7 +240,38 @@
               </div>
             </div>
           </div>
-          <div>
+          <div data-aos="flip-up">
+            <div class="post">
+              <img
+                class="thumbnail"
+                style="object-position: top;"
+                src="images/projects/parkbuddy.jpg"
+                alt="shout"
+              />
+              <div class="post-preview">
+                <h4 class="post-title">
+                  <a href="https://park-buddy.netlify.app/" target="_blank" rel="noopener"
+                    >Park Buddy</a
+                  >
+                </h4>
+                <p class="post-intro">
+                  Find useful information about America's national parks in one place with
+                  this MERN stack web app.  Data is sourced from the NPS
+                  <a href="https://www.nps.gov/subjects/developer/api-documentation.htm" target="_blank"  rel="noopener">API</a>.
+                </p>
+                <a href="https://park-buddy.netlify.app/" target="_blank" rel="noopener"
+                  >Live</a
+                >
+                |
+                <a
+                  href="https://github.com/andyrutherford/park-buddy"
+                  target="_blank" rel="noopener"
+                  >Repo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div data-aos="flip-up">
             <div class="post">
               <img
                 class="thumbnail"
@@ -239,7 +307,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div data-aos="flip-up">
             <div class="post">
               <img
                 class="thumbnail"
@@ -278,68 +346,6 @@
               </div>
             </div>
           </div>
-          <div>
-            <div class="post">
-              <img
-                class="thumbnail"
-                style="object-position: center;"
-                src="images/projects/bugwatch.jpg"
-                alt="bugWatch"
-              />
-              <div class="post-preview">
-                <h4 class="post-title">
-                  <a
-                    href="https://github.com/andyrutherford/bugWatch"
-                    target="_blank" rel="noopener"
-                    >bugWatch</a
-                  >
-                </h4>
-                <p class="post-intro">
-                  A bug tracking app. Include a log description, user, and
-                  assign a priority. Logs are saved using MongoDB. Built with
-                  <a href="https://www.electronjs.org/" target="_blank" rel="noopener"
-                    >Electron</a
-                  >.
-                </p>
-                <a
-                  href="https://github.com/andyrutherford/bugWatch"
-                  target="_blank" rel="noopener"
-                  >Repo</a
-                >
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="post">
-              <img
-                class="thumbnail"
-                style="object-position: center;"
-                src="images/projects/shout.jpg"
-                alt="shout"
-              />
-              <div class="post-preview">
-                <h4 class="post-title">
-                  <a href="https://shout-app2471.herokuapp.com/" target="_blank" rel="noopener"
-                    >Shout</a
-                  >
-                </h4>
-                <p class="post-intro">
-                  A lightweight instant messaging web app. Join a room and chat
-                  with your friends or colleagues in real time. Built with
-                  <a href="https://socket.io/" target="_blank"  rel="noopener">socket.io</a>.
-                </p>
-                <a href="https://shout-app2471.herokuapp.com/" target="_blank" rel="noopener"
-                  >Live</a
-                >
-                |
-                <a
-                  href="https://github.com/andyrutherford/shout-app"
-                  target="_blank" rel="noopener"
-                  >Repo</a
-                >
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -358,7 +364,19 @@
           <input id="submit-btn" type="submit" value="Send" />
         </form>
       </div>
-    </section>
-    <script type="text/javascript" src="script.js"></script>
+    </section><script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    AOS.init({
+      delay: 200,
+      duration: 1200,
+      once: true,
+    });
+  </script>
+  <script src="script.js"></script>
+    
   </body>
 </html>
