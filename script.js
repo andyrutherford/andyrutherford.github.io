@@ -1,3 +1,9 @@
+AOS.init({
+  delay: 200,
+  duration: 1200,
+  once: true,
+});
+
 function setTheme(mode) {
   if (mode === 'theme-light') {
     document.getElementById('theme-style').href = 'styles/default.css';
